@@ -17,52 +17,44 @@
       CMS.registerPreviewStyle("/admin/custom_preview.min.css");
     </script>
     <script>
-      document.querySelector('.nc-mediaLibrary-insertButton').addEventListener('click', function() {
-        var src = document.querySelector('.nc-imageControl-imageWrapper img').src
-
-        if (src.indexOf('http://localhost:4000')) {
-          
-          var newsrc = src.replace('http://localhost:4000', 'https://raw.githubusercontent.com/DboxDev/cibcsquare-baypark-website/develop');
-          document.querySelector('.nc-imageControl-imageWrapper img').src = newsrc;
-
-        } else if (src.indexOf('http://cibcsquare.dev.dbxd.com')) {
-          
-          var newsrc = src.replace('http://cibcsquare.dev.dbxd.com', 'https://raw.githubusercontent.com/DboxDev/cibcsquare-baypark-website/develop');
-          document.querySelector('.nc-imageControl-imageWrapper img').src = newsrc;
-        
-        } else if (src.indexOf('http://www.cibcsquare.com')) {
-        
-          var newsrc = src.replace('http://www.cibcsquare.com', 'https://raw.githubusercontent.com/DboxDev/cibcsquare-baypark-website/develop');
-          document.querySelector('.nc-imageControl-imageWrapper img').src = newsrc;
-        
-        } else if (src.indexOf('http://www.bayparkcentre.com')) {
-        
-          var newsrc = src.replace('http://www.bayparkcentre.com', 'https://raw.githubusercontent.com/DboxDev/cibcsquare-baypark-website/develop');
-          document.querySelector('.nc-imageControl-imageWrapper img').src = newsrc;
-        
-        } else if (src.indexOf('https://www.cibcsquare.com')) {
-        
-          var newsrc = src.replace('https://www.cibcsquare.com', 'https://raw.githubusercontent.com/DboxDev/cibcsquare-baypark-website/develop');
-          document.querySelector('.nc-imageControl-imageWrapper img').src = newsrc;
-        
-        }
-        
-      });
-
       var PostPreview = createClass({
         render: function() {
           var entry = this.props.entry;
           var image = entry.getIn(['data', 'thumbnail']);
           var bg = '';
           if (this.props.getAsset(image) !== null) {
-            bg = this.props.getAsset(image).toString();
+            bg = 'https://raw.githubusercontent.com/DboxDev/cibcsquare-baypark-website/develop'+this.props.getAsset(image).toString();
           }
           var date = new Date(entry.getIn(['data', 'date']));
           date = date.toLocaleDateString("en-US");
+
+
+          // here we are updating the URL of the Image chooser preview window to github as the mew uploaded image may not have been deployed yet
+          var src = '';
+          if (document.querySelector('.nc-imageControl-imageWrapper img') !== null) {
+            src = document.querySelector('.nc-imageControl-imageWrapper img').src
+            if (src.indexOf('http://localhost:4000') > -1) {           
+              var newsrc = src.replace('http://localhost:4000', 'https://raw.githubusercontent.com/DboxDev/cibcsquare-baypark-website/develop');
+              document.querySelector('.nc-imageControl-imageWrapper img').src = newsrc;
+            } else if (src.indexOf('http://cibcsquare.dev.dbxd.com') > -1) {
+              var newsrc = src.replace('http://cibcsquare.dev.dbxd.com', 'https://raw.githubusercontent.com/DboxDev/cibcsquare-baypark-website/develop');
+              document.querySelector('.nc-imageControl-imageWrapper img').src = newsrc;
+            } else if (src.indexOf('http://www.cibcsquare.com') > -1) {
+              var newsrc = src.replace('http://www.cibcsquare.com', 'https://raw.githubusercontent.com/DboxDev/cibcsquare-baypark-website/develop');
+              document.querySelector('.nc-imageControl-imageWrapper img').src = newsrc;
+            } else if (src.indexOf('http://www.bayparkcentre.com') > -1) {
+              var newsrc = src.replace('http://www.bayparkcentre.com', 'https://raw.githubusercontent.com/DboxDev/cibcsquare-baypark-website/develop');
+              document.querySelector('.nc-imageControl-imageWrapper img').src = newsrc;
+            } else if (src.indexOf('https://www.cibcsquare.com') > -1) {
+              var newsrc = src.replace('https://www.cibcsquare.com', 'https://raw.githubusercontent.com/DboxDev/cibcsquare-baypark-website/develop');
+              document.querySelector('.nc-imageControl-imageWrapper img').src = newsrc;
+            }
+          }
+
           return h('div', {"className": "nc-widgetPreview"},
             h('h1', {"className": "title"}, entry.getIn(['data', 'title'])),
             h('div', {"className": "date"}, date),
-            h('img', {src: 'https://raw.githubusercontent.com/DboxDev/cibcsquare-baypark-website/develop'+bg}),
+            h('img', {src: bg}),
             h('div', {"className": "body"}, this.props.widgetFor('body'))
           );
         }
