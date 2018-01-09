@@ -17,6 +17,38 @@
       CMS.registerPreviewStyle("/admin/custom_preview.min.css");
     </script>
     <script>
+      document.querySelector('.nc-mediaLibrary-insertButton').addEventListener('click', function() {
+        var src = document.querySelector('.nc-imageControl-imageWrapper img').src
+
+        if (src.indexOf('http://localhost:4000')) {
+          
+          var newsrc = src.replace('http://localhost:4000', 'https://raw.githubusercontent.com/DboxDev/cibcsquare-baypark-website/develop');
+          document.querySelector('.nc-imageControl-imageWrapper img').src = newsrc;
+
+        } else if (src.indexOf('http://cibcsquare.dev.dbxd.com')) {
+          
+          var newsrc = src.replace('http://cibcsquare.dev.dbxd.com', 'https://raw.githubusercontent.com/DboxDev/cibcsquare-baypark-website/develop');
+          document.querySelector('.nc-imageControl-imageWrapper img').src = newsrc;
+        
+        } else if (src.indexOf('http://www.cibcsquare.com')) {
+        
+          var newsrc = src.replace('http://www.cibcsquare.com', 'https://raw.githubusercontent.com/DboxDev/cibcsquare-baypark-website/develop');
+          document.querySelector('.nc-imageControl-imageWrapper img').src = newsrc;
+        
+        } else if (src.indexOf('http://www.bayparkcentre.com')) {
+        
+          var newsrc = src.replace('http://www.bayparkcentre.com', 'https://raw.githubusercontent.com/DboxDev/cibcsquare-baypark-website/develop');
+          document.querySelector('.nc-imageControl-imageWrapper img').src = newsrc;
+        
+        } else if (src.indexOf('https://www.cibcsquare.com')) {
+        
+          var newsrc = src.replace('https://www.cibcsquare.com', 'https://raw.githubusercontent.com/DboxDev/cibcsquare-baypark-website/develop');
+          document.querySelector('.nc-imageControl-imageWrapper img').src = newsrc;
+        
+        }
+        
+      });
+
       var PostPreview = createClass({
         render: function() {
           var entry = this.props.entry;
@@ -30,7 +62,7 @@
           return h('div', {"className": "nc-widgetPreview"},
             h('h1', {"className": "title"}, entry.getIn(['data', 'title'])),
             h('div', {"className": "date"}, date),
-            h('img', {src: bg}),
+            h('img', {src: 'https://raw.githubusercontent.com/DboxDev/cibcsquare-baypark-website/develop'+bg}),
             h('div', {"className": "body"}, this.props.widgetFor('body'))
           );
         }
