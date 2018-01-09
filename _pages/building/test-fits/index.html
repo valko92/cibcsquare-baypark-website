@@ -1,0 +1,200 @@
+---
+layout: default
+pageName: building
+title: Bay Park Centre Test Fits
+description: Bay Park Centre is a multi-phase commercial development in downtown Toronto, comprising two office towers (81 Bay Street and 141 Bay Street) connected by an expansive, landscaped park. Bay Park Centre will feature PATH access, LEED/WELL design, and best-in-class amenities. The Bay Park Centre team is Ivanhoé Cambridge, Hines, Wilkinson Eyre Architects, Adamson Associates Architects, and Cushman & Wakefield.
+---
+<div class="test-fits-page">
+    
+    <!--test fits main content - DESKTOP EDITION-->
+    <div class="test-fits-container container-fluid hidden-sm hidden-xs">
+        <div class="test-fits-wrapper row">
+            <div class="test-fits-heights col-md-5">
+                <div class="heights-picker row">
+                    <div class="height-image col-md-5">
+                        <img name="{{site.data.test-fits.high-rise.id}}" src="{{site.data.test-fits.high-rise.buildingstackimg}}" alt="Building stack icon." style="display:none;">
+                    </div>
+                    <div class="height-list col-md-7">
+                        <button name="{{site.data.test-fits.high-rise.id}}" class="button active-floor">
+                            {{site.data.test-fits.high-rise.title}}
+                            <img src="/assets/images/icons/arrow-right-white-button.png" alt="White right arrow">
+                        </button>   
+                        <button name="{{site.data.test-fits.mid-high-rise.id}}" class="button">
+                            {{site.data.test-fits.mid-high-rise.title}}
+                            <img src="/assets/images/icons/arrow-right-white-button.png" alt="White right arrow">
+                        </button>   
+                        <button name="{{site.data.test-fits.mid-low-rise.id}}" class="button">
+                            {{site.data.test-fits.mid-low-rise.title}}
+                            <img src="/assets/images/icons/arrow-right-white-button.png" alt="White right arrow">
+                        </button>   
+                        <button name="{{site.data.test-fits.low-rise.id}}" class="button">
+                            {{site.data.test-fits.low-rise.id}}
+                            <img src="/assets/images/icons/arrow-right-white-button.png" alt="White right arrow">
+                        </button>   
+                        <button name="{{site.data.test-fits.podium.id}}" class="button">
+                            {{site.data.test-fits.podium.title}}
+                            <img src="/assets/images/icons/arrow-right-white-button.png" alt="White right arrow">
+                        </button>   
+                    </div>
+                </div>
+                
+            
+                <div name="{{site.data.test-fits.high-rise.id}}" class="row height-info">
+                    <div class="bar"></div>
+                    <div name="{{site.data.test-fits.high-rise.id}}" class="top-row row">
+                        <div class="title col-md-6">
+                            <h2>{{site.data.test-fits.high-rise.title}}</h2>
+                        </div>
+                        <button class="plain view-icon col-md-6" role="button" data-toggle="modal" data-target="#view"></button>
+                    </div>
+                    <div name="{{site.data.test-fits.high-rise.id}}" class="bottom-row row">
+                        <div class="label col-md-6 caption">Floors</div>
+                        <div class="info floors-info col-md-6 caption">{{site.data.test-fits.high-rise.floors}}</div>
+                        <div class="label col-md-6 caption">RSF</div>
+                        <div class="info rsf-info col-md-6 caption">{{site.data.test-fits.high-rise.rsf}}</div>
+                    </div>
+                </div>
+                
+            
+                <div name="{{site.data.test-fits.high-rise.plates.plateid}}" class="row plate-info" style="display:none;">
+                    <div class="top-row row">
+                        <h3 class="title col-md-6 sans">{{site.data.test-fits.high-rise.plates.platetitle}}</h3>
+                    </div>
+                    <div class="bottom-row row">
+                        <!-- populated from jQuery thru JSON -->
+                    </div>
+                </div>
+            </div>
+            
+            <div name="{{site.data.test-fits.high-rise.id}}" class="test-fits-plates row col-md-7">
+                <!--plate buttons for both high-rise and podium-->
+                <div name="high-rise-buttons" class="plate-types-flex">    
+                    <button name="{{site.data.test-fits.high-rise.floorplate.plateid}}" class="button plate-type-flex-child active-plate">
+                        {{site.data.test-fits.high-rise.floorplate.platetitle}}
+                    </button>
+                    <button name="{{site.data.test-fits.high-rise.open.plateid}}" class="button plate-type-flex-child">
+                        {{site.data.test-fits.high-rise.open.platetitle}}
+                    </button>
+                    <button name="{{site.data.test-fits.high-rise.highdensity.plateid}}" class="button plate-type-flex-child">
+                        {{site.data.test-fits.high-rise.highdensity.platetitle}}
+                    </button>
+                    <button name="{{site.data.test-fits.high-rise.legalfirm.plateid}}" class="button plate-type-flex-child">
+                        {{site.data.test-fits.high-rise.legalfirm.platetitle}}
+                    </button>
+                </div>
+                <div name="podium-buttons" class="plate-types-flex" style="display:none;">    
+                    <button name="{{site.data.test-fits.podium.floorplate.plateid}}" class="button plate-type-flex-child active-plate">
+                        {{site.data.test-fits.podium.floorplate.platetitle}}
+                    </button>
+                    <button name="{{site.data.test-fits.podium.trading.plateid}}" class="button plate-type-flex-child">
+                        {{site.data.test-fits.podium.trading.platetitle}}
+                    </button>
+                    <button name="{{site.data.test-fits.podium.highdensity.plateid}}" class="button plate-type-flex-child">
+                        {{site.data.test-fits.podium.highdensity.platetitle}}
+                    </button>
+                </div>
+                <!-- / plate buttons for both high-rise and podium-->
+
+                <div class="plate-image row">
+                    <img name="{{site.data.test-fits.high-rise.id}}" src="{{site.data.test-fits.high-rise.img}}" alt="{{site.data.test-fits.high-rise.title}} Plate image">
+                </div>
+                <div class="plate-icons row">
+                    <button class="full-screen-icon" data-toggle="modal" data-target="#expand"></button>
+                    <div class="compass-icon"></div>
+                </div>
+            </div>
+            
+        </div>  
+    </div>
+    <!-- / test fits main content - DESKTOP EDITION-->
+
+    <!--test fits main content - TABLET EDITION-->
+    <div class="test-fits-container-sm container-fluid hidden-md hidden-lg">
+        <div class="test-fits-wrapper row">
+            <div class="heights-picker-screen row">
+                <h1 class="heights-title text-center">
+                    <i>Select Region</i>
+                </h1>
+                <div class="heights-section row">
+                    <div class="heights-image-large col-xs-6">
+                        <img src="/assets/images/building/test-fits/building-stack-sm.svg" alt="Large tablet building icon.">
+                    </div>
+                    <div class="heights-list-sm col-xs-6">
+                        <button name="{{site.data.test-fits.high-rise.id}}" class="button {{site.data.test-fits.high-rise.id}}-button">
+                            <span class="button-text col-xs-8">
+                                <div class="height-font">{{site.data.test-fits.high-rise.title}}</div>
+                            </span>
+                            <span class="button-img col-xs-4">
+                                <img src="/assets/images/icons/arrow-right-honey-button.png" alt="honey right arrow">
+                            </span>
+                        </button>   
+                        <button name="{{site.data.test-fits.mid-high-rise.id}}" class="button {{site.data.test-fits.high-rise.id}}-button">
+                            <span class="button-text col-xs-8">
+                                <div class="height-font">{{site.data.test-fits.mid-high-rise.title}}</div>
+                            </span>
+                            <span class="button-img col-xs-4">
+                                <img src="/assets/images/icons/arrow-right-honey-button.png" alt="honey right arrow">
+                            </span>
+                        </button>   
+                        <button name="{{site.data.test-fits.mid-low-rise.id}}" class="button {{site.data.test-fits.high-rise.id}}-button">
+                            <span class="button-text col-xs-8">
+                                <div class="height-font">{{site.data.test-fits.mid-low-rise.title}}</div>
+                            </span>
+                            <span class="button-img col-xs-4">
+                                <img src="/assets/images/icons/arrow-right-honey-button.png" alt="honey right arrow">
+                            </span>
+                        </button>   
+                        <button name="{{site.data.test-fits.low-rise.id}}" class="button {{site.data.test-fits.high-rise.id}}-button">
+                            <span class="button-text col-xs-8">
+                                <div class="height-font">{{site.data.test-fits.low-rise.title}}</div>
+                            </span>
+                            <span class="button-img col-xs-4">
+                                <img src="/assets/images/icons/arrow-right-honey-button.png" alt="honey right arrow">
+                            </span>
+                        </button>   
+                        <button name="{{site.data.test-fits.podium.id}}" class="button {{site.data.test-fits.high-rise.id}}-button">
+                            <span class="button-text col-xs-8">
+                                <div class="height-font">{{site.data.test-fits.podium.title}}</div>
+                            </span>
+                            <span class="button-img col-xs-4">
+                                <img src="/assets/images/icons/arrow-right-honey-button.png" alt="honey right arrow">
+                            </span>
+                        </button>   
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="hidden-xs hidden-sm">
+        {% include what-to-see-next.html
+        hover="hover-area"
+        link1="/building/views"
+        title1="Views"
+        image1="/assets/images/building/wtsn-thumb-views.jpg"
+        imageCaption1="Views image."
+        arrow1="<span class='honey link1'>Learn More <img src='/assets/images/icons/arrow-right-honey-link.png' class='jumping-arrow'></span>"
+
+        link2="/#efficiency"
+        title2="Engineered <br> for Efficiency"
+        image2="/assets/images/building/wtsn-thumb-efficiency.jpg"
+        imageCaption2="Stacking plan image and test fits."
+        arrow2="<span class='honey link1'>Learn More <img src='/assets/images/icons/arrow-right-honey-link.png' class='jumping-arrow'></span>"
+        %}
+    </div>
+
+    <div class="m40"></div>
+
+    <!--<div class="test-fits-nagivation">-->
+    {% include pages-navigation.html  
+    right-page="true"
+    right-url="/location/"
+    right-title="LOCATION"
+
+    left-page="true"
+    left-url="/"
+    left-title="BUILDING"
+    %}
+    <!--</div>-->  
+</div>

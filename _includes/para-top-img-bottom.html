@@ -1,0 +1,10 @@
+<div class="row">
+	{% if include.reverse %}
+		<div class="row">{% include fancy-image.html %}</div>
+		<div class="m60 m90-sm"></div>
+		<div class="row">{% include fancy-paragraph.html %}</div>
+	{% else %}
+		{% include fancy-paragraph.html %}		
+		{% include fancy-image.html %}
+	{% endif %}
+</div>

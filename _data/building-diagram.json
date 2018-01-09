@@ -1,0 +1,21 @@
+{"efficiency": [
+    {
+        "id": "eff",
+        "button": "EFFICIENCY & SOLAR",
+        "video": "assets/images/building/efficiency_diagram/solar.mp4",
+        "img": "assets/images/building/efficiency_diagram/solar.jpg",
+        "caption": "Floor-to-ceiling windows with acoustically optimized glass allow vast views, while bringing natural light, airiness, and focus into every office."
+    },{    
+        "id": "hvac",
+        "button": "HVAC",
+        "video": "assets/images/building/efficiency_diagram/hvac.mp4",
+        "img": "assets/images/building/efficiency_diagram/hvac.jpg",
+        "caption": "A highly optimized HVAC system minimizes noise while distributing filtered air with temperature consistency throughout."
+    },{
+        "id": "dim",
+        "button": "DIMENSIONS",
+        "video": "assets/images/building/efficiency_diagram/dimensions.mp4",
+        "img": "assets/images/building/efficiency_diagram/dimensions.jpg",
+        "caption": "Office Floor Plates feature 42' column free core-to-glass spans, with typical high-rise floor plates at 32,000SF and podium floor plates at 64,000SF."
+    }
+]}

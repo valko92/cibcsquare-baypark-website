@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<panorama id="">
+  <view fovmode="0" pannorth="0">
+    <start pan="15.9" fov="36" tilt="1.5"/>
+    <min pan="-180" fov="5" tilt="-16.5"/>
+    <max pan="180" fov="120" tilt="19.5"/>
+  </view>
+  <userdata title="" datetime="" description="" copyright="all rights reserved by Blimp Pics" tags="" author="" source="" comment="" info="" longitude="" latitude=""/>
+  <hotspots width="180" height="20" wordwrap="1">
+    <label width="180" backgroundalpha="1" enabled="1" height="20" backgroundcolor="0xffffff" bordercolor="0x000000" border="1" textcolor="0x000000" background="1" borderalpha="1" borderradius="1" wordwrap="1" textalpha="1"/>
+    <polystyle mode="0" backgroundalpha="0.2509803921568627" backgroundcolor="0x0000ff" bordercolor="0x0000ff" borderalpha="1"/>
+  </hotspots>
+  <media/>
+  <input width="4079" height="4079" leveltilesize="512" levelbias="0.400" overlap="1" leveltileurl="tiles/175m_Panorama/c%c_l%r_%y_%x.jpg">
+    <level width="4079" height="4079" preload="0"/>
+    <level width="2040" height="2040" preload="1"/>
+    <level width="1020" height="1020" preload="0"/>
+    <level width="255" preview="1" height="255" preload="1"/>
+    <preview color="0x808080"/>
+  </input>
+  <control simulatemass="1" lockedmouse="0" lockedkeyboard="0" dblclickfullscreen="0" invertwheel="0" lockedwheel="1" invertcontrol="1" speedwheel="1" sensitivity="8"/>
+</panorama>

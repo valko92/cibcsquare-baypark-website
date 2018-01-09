@@ -1,0 +1,14 @@
+<div class="row slick-slider-wrapper">
+	<div id="{{include.id}}" class="slick-slider page-slider">
+			{% for slide in include.slideshow %}
+			<div class="slick-slide">
+				<div class="slick-img-wrapper">
+					<img {% if slide.url == '/assets/images/park-amenities/dan-biederman/PingPong-th.jpg' %}class="special-little-snowflake"{% endif %}src="{{slide.url}}" alt="{{slide.caption}}">
+				</div>
+				<div class="caption-wrapper">
+					<small class="caption">{{slide.caption}}</small>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+</div>

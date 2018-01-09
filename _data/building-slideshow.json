@@ -1,0 +1,33 @@
+{
+	"slideshow": [
+		{	
+			"url": "/assets/images/building/fairmont.jpg",
+			"caption": "81 Bay Street and 141 Bay Street, as viewed from the Fairmont Royal York Hotel."
+		},{
+			"url": "/assets/images/building/full_size_zoom1.jpg",
+			"caption": "81 Bay Street and 141 Bay Street, as viewed from the Inner Harbour."
+		},{
+			"url": "/assets/images/building/full_size_zoom2.jpg",
+			"caption": "Bay Park Centre will be immediately accessible via all major means of transportation, including the Gardiner Expressway."
+		},{
+			"url": "/assets/images/building/full_size_zoom3.jpg",
+			"caption": "Office floors enjoy unobstructed views, natural light, fresh air, and high ceilings."
+		},{	
+			"url": "/assets/images/park-amenities/amenities/plaza.jpg",
+			"caption": "The design and distinctive materials of the plaza at 81 Bay Street give it prominent street-level status."
+		},{
+			"url": "/assets/images/park-amenities/amenities/lobby.jpg",
+			"caption": "81 Bay Street's soaring lobby opens to an advanced elevator system providing swift access to the office floors above."
+		},{
+			"url": "/assets/images/park-amenities/amenities/plaza-dusk.jpg",
+			"caption": "The plaza at 81 Bay Street allows for easy access to the lobby and the elevated park that will link 81 and 141 Bay Street."
+		},
+        {
+			"url": "/assets/images/building/teamway.jpg",
+			"caption": "A newly renovated teamway will connect 81 Bay and 141 Bay, and provide access to the financial core beyond."
+		},{
+			"url": "/assets/images/building/north_portal.jpg",
+			"caption": "Prior to 141 Bay's completion, the North Portal will provide access to 81 Bay via the teamway and the one-acre park above."
+		}		
+	]
+}

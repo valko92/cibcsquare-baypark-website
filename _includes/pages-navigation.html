@@ -1,0 +1,25 @@
+<div class="row pages-navigation-wrapper">
+{% if include.left-page %}
+	<div class="hover-area col-xs-6 pull-left">
+		<a class="left-content" href="{{include.left-url}}">
+			<img class="jumping-page-arrow-back" src="/assets/images/icons/arrow-prevpage.png">
+			<div class="text-left menu1">
+				<i>Previous</i> 
+				<br>
+				{{include.left-title}}
+			</div>
+		</a>
+	</div>
+{% endif %} {% if include.right-page %}
+	<div class="hover-area col-xs-6 pull-right">
+		<a class="right-content" href="{{include.right-url}}">
+			<div class="text-right menu1">
+				<i>Next</i> 
+				<br>
+				{{include.right-title}}
+			</div>
+			<img class="jumping-page-arrow-next" src="/assets/images/icons/arrow-nextpage.png">
+		</a>
+	</div>
+{% endif %}
+</div>

@@ -1,0 +1,65 @@
+<div name="{{include.id}}" class="row diagram">
+	<div class="col-md-10 col-md-offset-1 shadow">
+		<div class="col-xs-12 col-xs-offset-0 col-md-3 col-md-offset-1 button-section {{include.button-position}}">
+			{%  if include.title %}
+				<h3 class="diagram-title">{{include.title}}</h3>
+			{% endif %}
+			{% for item in include.data %}
+				<button id="{{item.id}}" class="button-square {% if forloop.index == 1 %} active {% endif %}">
+					{{item.button}}
+				</button>
+			
+      
+                {% if item.attractions %}
+                <ul class="attractions-slide-lg attractions-slide hidden-xs hidden-sm" style="display:none;">
+                {% for attraction in item.attractions %}
+                    <li id="{{attraction.id}}" class="attraction">
+                    <button class="button-square link1">
+                    <span class="circle {% if forloop.index == 1 %} active {% endif %}"></span> 
+                    {{attraction.name}}
+                    </button>
+                    </li>
+                {% endfor %}
+                </ul>
+                {% endif %}
+            {% endfor %}
+      
+			<div class="caption visible-md visible-lg">
+				{{include.data[0].caption}}
+			</div>
+		</div>
+		<div class="col-xs-12 col-md-8 media-section">
+      {% if include.id != 'neighborhood'%}
+        <video poster="{{include.data[0].img}}">
+          <source src="{{include.data[0].video}}" type="video/mp4">
+          <span> Your browser does not support the video tag </span>
+        </video>
+      {% else %}
+        {% if include.data.attractions[0]].id == 'hotels' %}
+          <img src="{{include.data[0].attractions[0].img}}" alt="">
+        {% else %}
+          <img src="{{include.data[0].img}}" alt="">
+        {% endif %}
+      {% endif %}
+		</div>
+		<div class="caption visible-xs visible-sm">
+				{{include.data[0].caption}}
+		</div>
+    <div class="attractions-slide-sm-wrapper  hidden-md hidden-lg">  
+    {% for item in include.data %}
+      {% if item.attractions %}
+        <ul class="attractions-slide-sm attractions-slide" style="display:none;">
+        {% for attraction in item.attractions %}
+            <li id="{{attraction.id}}" class="attraction col-xs-3">
+            <button class="button-square link1">
+            <span class="circle {% if forloop.index == 1 %} active {% endif %}"></span> 
+            {{attraction.name}}
+            </button>
+            </li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+    {% endfor %}
+    </div>  
+	</div>
+</div>

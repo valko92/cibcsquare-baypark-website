@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+  <body>
+    <noscript id="deferred-styles">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+    </noscript>
+    <script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+          window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
+
+    <!-- white preloader than fades out on page load -->  
+    <div align="center" class="preloader">
+      <div class="preloader-image">
+        <img src="/assets/images/logos/bay-park-centre-logo.png" width="256px">
+      </div>
+    
+      <button class="preloader-skip body1">Click to skip »</button>
+    </div>
+    <!-- / white preloader than fades out on page load -->  
+    <!-- if no JS enabled, still show the page -->
+    <noscript>
+      <style type="text/css">
+          .preloader.fade {
+            opacity: 0;
+            z-index: -99999;
+          }
+      </style>
+    </noscript>
+    <!-- / if no JS enabled, still show the page -->
+
+    {% if page.url == '/building/test-fits/' %}
+        {% include test-fits-small-plate-overlay.html %}
+    {% endif %}
+
+
+    {% include header.html %}
+
+    <div class="page-content {% if page.url == '/building/test-fits/' %}full-height{% endif %}">
+      {% if page.url != '/building/views/' and page.url != '/building/test-fits/' %}
+        {% include looping-video.html%}
+      {% endif %}
+      <div class="body-content container-fluid">
+        {{ content }}
+      </div>
+        {% include modal_news.html %}
+        {% include modal_legal.html %}
+        {% include modal_contact.html %}
+        {% include modal_updates.html %}
+        {% include modal_expand.html %}
+        
+        {% if page.pageName == 'building' %}
+          {% include modal_vimeo.html %}
+        {% endif %}
+
+        {% if page.url != '/building/views/' and page.url != '/building/test-fits/' and page.url != '/location/' %}
+          {% include modal_slideshow.html %}
+        {% endif %}
+
+        {% include modal_features_and_specs.html %}
+
+        {% if page.url == '/building/test-fits/' or page.url == '/building/views/' %}
+          {% include modal_view.html %}
+        {% endif %}
+      
+    </div>
+    
+
+    {% include footer.html %}
+	
+	{% include scripts.html %}
+  </body>
+
+</html>

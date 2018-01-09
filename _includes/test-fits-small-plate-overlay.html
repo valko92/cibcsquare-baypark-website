@@ -1,0 +1,97 @@
+<div class="test-fits-plates-screen hidden-md hidden-lg" >
+    <div class="scrollable-content">
+        <!--back arrow-->
+        <div class="back-to-heights-arrow row">
+            <button class="button">
+                <div>
+                    <img src="/assets/images/icons/arrow-right-white-button.png" alt="back arrow white">
+                    <span class="link1">
+                        Stacking 
+                        <br>    
+                        Plan
+                    </span>
+                </div>
+            </button>
+        </div>
+        <!--/ back arrow-->
+
+        <!--plate buttons for both high-rise and podium-->
+        <div name="high-rise-buttons" class="plate-buttons row">    
+            <div class="plate-types-flex">
+                <button name="{{site.data.test-fits.high-rise.floorplate.plateid}}" class="button plate-type-flex-child active-plate">
+                    {{site.data.test-fits.high-rise.floorplate.platetitle}}
+                </button>
+                <button name="{{site.data.test-fits.high-rise.open.plateid}}" class="button plate-type-flex-child">
+                    {{site.data.test-fits.high-rise.open.platetitle}}
+                </button>
+                <button name="{{site.data.test-fits.high-rise.highdensity.plateid}}" class="button plate-type-flex-child">
+                    {{site.data.test-fits.high-rise.highdensity.platetitle}}
+                </button>
+                <button name="{{site.data.test-fits.high-rise.legalfirm.plateid}}" class="button plate-type-flex-child">
+                    {{site.data.test-fits.high-rise.legalfirm.platetitle}}
+                </button>
+            </div>
+        </div>
+        <div name="podium-buttons" class="plate-buttons row" style="display:none;">   
+            <div class="plate-types-flex"> 
+                <button name="{{site.data.test-fits.podium.floorplate.plateid}}" class="button plate-type-flex-child active-plate">
+                    {{site.data.test-fits.podium.floorplate.platetitle}}
+                </button>
+                <button name="{{site.data.test-fits.podium.trading.plateid}}" class="button plate-type-flex-child">
+                    {{site.data.test-fits.podium.trading.platetitle}}
+                </button>
+                <button name="{{site.data.test-fits.podium.highdensity.plateid}}" class="button plate-type-flex-child">
+                    {{site.data.test-fits.podium.highdensity.platetitle}}
+                </button>
+            </div>
+        </div>
+        <!-- / plate buttons for both high-rise and podium-->
+            
+        
+        <!--floorplate image-->
+        <div class="plate-image row">
+            <img src="{{site.data.test-fits.high-rise.img}}" alt="{{site.data.test-fits.high-rise.title}} Plate image">
+
+            <div class="plate-icons row">
+                <button class="full-screen-icon" data-toggle="modal" data-target="#expand"></button>
+                <div class="compass-icon"></div>
+            </div>
+
+        </div>
+        <!-- / floorplate image-->
+        
+        <!--plate info-->
+        <div class="plate-info-wrapper row">
+            <!--picked height info-->
+            <div class="height-info col-sm-6">
+                <div class="bar"></div>
+                <div class="top-row row">
+                    <div class="title col-xs-6">
+                        <h2>{{site.data.test-fits.high-rise.title}}</h2>
+                    </div>
+                    <button class="plain view-icon col-xs-6" role="button" data-toggle="modal" data-target="#view"></button>
+                </div>
+                <div class="bottom-row row">
+                    <div class="label col-xs-6 caption">Floors</div>
+                    <div class="info floors-info col-md-6 caption">{{site.data.test-fits.high-rise.floors}}</div>
+                    <div class="label col-xs-6 caption">RSF</div>
+                    <div class="info rsf-info col-md-6 caption">{{site.data.test-fits.high-rise.rsf}}</div>
+                </div>
+            </div>
+            <!--/ picked height info-->
+            
+            <!--diff floorplate info-->
+            <div name="{{site.data.test-fits.high-rise.plates.plateid}}" class="plate-info col-sm-6" style="display:none;">
+                <div class="top-row row">
+                    <h3 class="title col-xs-6 sans">{{site.data.test-fits.high-rise.plates.platetitle}}</h3>
+                </div>
+                <div class="bottom-row row">
+                    <!-- populated from jQuery thru JSON -->
+                </div>
+            </div>
+            <!--/ diff floorplate info-->
+        </div>
+        <!--/ plate info-->
+        
+    </div>
+</div>

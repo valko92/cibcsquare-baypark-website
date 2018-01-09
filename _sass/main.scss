@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+
+
+// Our variables
+$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     25px;
+
+$text-color:         #2c2c35;
+$background-color:   #ffffff;
+$brand-color:        #6b717d;
+
+$grey-color:         #6b717d;
+$grey-color-light:   #babdc4;
+$grey-color-dark:    #454545;
+
+//other colors
+$black-color:        #2c2c35;
+$gray-color-lighter: #eaebed; 
+$white-color:        #ffffff; 
+$red-color:          red; 
+$honey-color:        #cda35c;
+
+$black-bgcolor:        #2c2c35; 
+$black-bgcolor-90:     rgba(44, 44, 53, 0.90); 
+$gray-bgcolor-dark:    #454545; 
+$gray-bgcolor:         #6b717d; 
+$gray-bgcolor-light:   #babdc4; 
+$gray-bgcolor-lighter: #eaebed; 
+$white-bgcolor:        #ffffff; 
+$red-bgcolor:          red; 
+$honey-bgcolor:        #cda35c;
+$none-bgcolor:         transparent; 
+
+$white-borders:        #ffffff;
+$honey-borders:        #cda35c;
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+$screen-xs: 430px;
+$screen-sm: 768px;
+$screen-md: 960px;
+$screen-lg: 1170px;
+$screen-xl: 1920px;
+$screen-xxl: 1556px;
+
+
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+@import
+        "base",
+        "custom-variables",
+        "layout",
+        
+        "bootstrap/mixins",        
+        "bootstrap/button-groups",
+        "bootstrap/buttons",
+        "bootstrap/carousel",
+        "bootstrap/close",
+        "bootstrap/component-animations",
+        "bootstrap/dropdowns",
+        "bootstrap/grid",
+        "bootstrap/modals",
+        "bootstrap/forms",
+        "bootstrap/navs",
+        "bootstrap/navbar",
+        "bootstrap/normalize",
+        "bootstrap/responsive-utilities",
+        "bootstrap/scaffolding",
+        "bootstrap/type",
+        "bootstrap/utilities",
+        
+        "typography",
+        "header",
+        "footer",
+        "page",
+        "utilities"
+;

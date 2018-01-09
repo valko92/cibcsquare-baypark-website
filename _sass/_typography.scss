@@ -1,0 +1,283 @@
+@font-face {
+    font-family: 'freight-display-pro';
+    src: url('/assets/fonts/garagefonts-freightdispprobook-webfont.eot');
+    src: url('/assets/fonts/garagefonts-freightdispprobook-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/garagefonts-freightdispprobook-webfont.woff2') format('woff2'),
+         url('/assets/fonts/garagefonts-freightdispprobook-webfont.woff') format('woff'),
+         url('/assets/fonts/garagefonts-freightdispprobook-webfont.ttf') format('truetype'),
+         url('/assets/fonts/garagefonts-freightdispprobook-webfont.svg#freightdisp_probook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'freight-sans-pro';
+    src: url('/assets/fonts/garagefonts-freightsansprobook-webfont.eot');
+    src: url('/assets/fonts/garagefonts-freightsansprobook-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/garagefonts-freightsansprobook-webfont.woff2') format('woff2'),
+         url('/assets/fonts/garagefonts-freightsansprobook-webfont.woff') format('woff'),
+         url('/assets/fonts/garagefonts-freightsansprobook-webfont.ttf') format('truetype'),
+         url('/assets/fonts/garagefonts-freightsansprobook-webfont.svg#freightsans_probook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'freight-text-pro-light';
+    src: url('/assets/fonts/garagefonts-freightsansprolight-webfont.eot');
+    src: url('/assets/fonts/garagefonts-freightsansprolight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/garagefonts-freightsansprolight-webfont.woff2') format('woff2'),
+         url('/assets/fonts/garagefonts-freightsansprolight-webfont.woff') format('woff'),
+         url('/assets/fonts/garagefonts-freightsansprolight-webfont.ttf') format('truetype'),
+         url('/assets/fonts/garagefonts-freightsansprolight-webfont.svg#freightsans_prolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'freight-text-pro';
+    src: url('/assets/fonts/garagefonts-freighttextprobook-webfont.eot');
+    src: url('/assets/fonts/garagefonts-freighttextprobook-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/garagefonts-freighttextprobook-webfont.woff2') format('woff2'),
+         url('/assets/fonts/garagefonts-freighttextprobook-webfont.woff') format('woff'),
+         url('/assets/fonts/garagefonts-freighttextprobook-webfont.ttf') format('truetype'),
+         url('/assets/fonts/garagefonts-freighttextprobook-webfont.svg#freighttext_probook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'freight-sans-pro-medium';
+    src: url('/assets/fonts/garagefonts-freightsanspromedium-webfont.eot');
+    src: url('/assets/fonts/garagefonts-freightsanspromedium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/garagefonts-freightsanspromedium-webfont.woff2') format('woff2'),
+         url('/assets/fonts/garagefonts-freightsanspromedium-webfont.woff') format('woff'),
+         url('/assets/fonts/garagefonts-freightsanspromedium-webfont.ttf') format('truetype'),
+         url('/assets/fonts/garagefonts-freightsanspromedium-webfont.svg#freightsans_promedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, td, span, p, input {
+  color: #69727f;
+  font-family: 'freight-text-pro';
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h4, .h4, h6 {
+  color:#2c2c35;
+  font-family: 'freight-text-pro';
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  color:#2c2c35;
+  font-family: 'freight-display-pro';
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 32px;
+  letter-spacing: 0px;
+  line-height: 1.2;
+  color: rgb(44, 44, 53);
+}
+
+h2 {
+  color:#2c2c35;
+  font-family: 'freight-display-pro';
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 26px;
+  letter-spacing: 0px;
+  line-height: 1.2;
+  color: rgb(44, 44, 53);
+}
+
+h3 {
+  color: #69727f;
+  font-family: 'freight-sans-pro-medium';
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 20px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+h5 {
+  color: #69727f;
+  font-family: 'freight-text-pro';
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0;
+}
+
+.body1 {
+  color: #69727f;
+  font-family: 'freight-text-pro';
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 19px;
+  letter-spacing: 0;
+}
+
+.body2 {
+  color: #b9bdc3;
+  font-family: 'freight-sans-pro';
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 17px;
+  letter-spacing: 0.1em;
+}
+
+.caption {
+  color: #9ba1a9; 
+  font-family: 'freight-sans-pro';
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+  line-height: normal;
+}
+
+.menu1 {
+  color: #6b717d;
+  font-family: 'freight-text-pro';
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  letter-spacing: 0;
+}
+
+@media screen and (max-width: 429px) {
+  .menu1-mobile {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 430px) and (max-width: 750px) {
+  .menu1-mobile {
+    font-size: 14px;
+  }
+}
+
+.menu2 {
+  color: white;
+  font-family: 'freight-text-pro';
+  font-weight: normal;
+  font-size: 17px;
+  letter-spacing: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.menu3 {
+  color: #9ba1a9;
+  font-family: 'freight-sans-pro';
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.link1, .link1 span, button {
+  font-family: 'freight-text-pro-light';
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button.link1 {
+  -webkit-transition: background-color 200ms linear;
+  -moz-transition: background-color 200ms linear;
+  -o-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+}
+
+.link2 {
+  font-family: 'freight-display-pro';
+  font-weight: normal;
+  font-size: 20px;
+  color: rgb(44, 44, 53);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (min-width: 430px) {
+  .menu1 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  .body1 {
+    font-size: 18px;
+  }
+
+  .body2 {
+    font-size: 18px;
+  }
+
+  .menu2 {
+    font-size: 17px;
+  }
+
+  .menu3 {
+    color: #9ba1a9;
+    font-family: 'freight-sans-pro';
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+  }
+
+  .link2 {
+    font-size: 24px;
+  }
+}
+
+
+.serif {
+  font-family: 'freight-display-pro';
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.sans {
+  font-family: 'freight-sans-pro';
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration:none;
+  color:#cda35c;
+}
+
+h1.heading {
+  font-size:200%;
+  line-height:1;
+}

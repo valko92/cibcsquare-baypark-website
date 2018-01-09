@@ -1,0 +1,39 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  
+  <link rel="stylesheet" href="/assets/css/main.min.css">
+
+  
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="/feed.xml"/>
+
+  <link rel='shortcut icon' type='image/ico' href="/favicon.ico" />
+  <link rel="icon" type="image/x-icon"  href="/favicon.ico" />
+  <link rel="image_src" href="/assets/images/logos/bay-park-centre-logo-icon.png" /> 
+  <link rel="apple-touch-icon" href="/assets/images/logos/bay-park-centre-logo-icon.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/logos/bay-park-centre-logo-icon.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/logos/bay-park-centre-logo-icon.png" />
+  
+  <meta name="language" content="English">
+  <meta name="robots" content="ALL">
+  <meta name="revisit-after" content="1 day">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Place","name":"Bay Park Centre","alternateName":["Bay Park Centre","Bay Park Centre commercial development","Bay Park Centre in downtown Toronto","multi-phase commercial development Bay Park Centre"],"url":"http://www.bayparkcentre.com/","description":"Bay Park Centre is a multi-phase commercial development in downtown Toronto, comprising two office towers (81 Bay Street and 141 Bay Street) connected by an expansive, landscaped park. Bay Park Centre will feature PATH access, LEED/WELL design, and best-in-class amenities. The Bay Park Centre team is Ivanho&eacute; Cambridge, Hines, Wilkinson Eyre Architects, Adamson Associates Architects, and Cushman & Wakefield.","hasMap":"https://www.google.com/maps/place/Bay+Park+Centre/@43.643823,-79.3815118,16.83z/data=!4m5!3m4!1s0x89d4cb2c8006df61:0xad4912982ec8a44e!8m2!3d43.6440033!4d-79.3775405","address":[{"@type":"PostalAddress","addressLocality":"Toronto","addressRegion":"ON","addressCountry":"Canada","postalCode":"M5J","streetAddress":"81 Bay Street"},{"@type":"PostalAddress","addressLocality":"Toronto","addressRegion":"ON","addressCountry":"Canada","postalCode":"M5J","streetAddress":"141 Bay Street"}]}</script>
+
+  <!-- google analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-63541835-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <!-- / google analytics -->
+</head>

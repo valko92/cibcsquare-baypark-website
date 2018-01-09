@@ -1,0 +1,42 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
+  <url>
+      <loc>http://www.bayparkcentre.com/</loc>
+      <lastmod>{{ site.time | date_to_xmlschema}}</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>1.0</priority> 
+  </url>
+  <url>
+    <loc>http://www.bayparkcentre.com/building/test-fits/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema}}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://www.bayparkcentre.com/building/views/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema}}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>http://www.bayparkcentre.com/location/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema}}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>http://www.bayparkcentre.com/park-amenities/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema}}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.bayparkcentre.com/team/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema}}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+</urlset>

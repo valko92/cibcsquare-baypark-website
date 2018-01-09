@@ -1,0 +1,16 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - bundle install
+  build:
+    commands:
+      - JEKYLL_ENV=production jekyll build
+      - aws s3 sync _site s3://cibcsquare.dev.dbxd.com --exclude "assets/js/libs/*" --exclude "assets/panos/*" --region=us-east-1
+artifacts:
+  files: 
+    - '_site/admin/*'
+cache:
+  paths:
+    - vendor/**/*
+    - ./bundle/**/*

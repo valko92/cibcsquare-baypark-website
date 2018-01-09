@@ -1,0 +1,86 @@
+{
+  "neighborhood": [
+    {
+      "id": "transit",
+      "button": "TRANSIT",
+      "img": "/assets/images/location/Transit.jpg",
+      "caption": ""
+    }, {
+      "id": "path",
+      "button": "PATH",
+      "img": "/assets/images/location/Path.jpg",
+      "caption": ""      
+    }, {
+      "id": "access",
+      "button": "ACCESS",
+      "img": "/assets/images/location/VehicularAccess.jpg",
+      "caption": ""      
+    }, {
+      "id": "attractions",
+      "button": "ATTRACTIONS",
+      "img": "/assets/images/location/Hotels.jpg",
+      "caption": "",
+      "attractions": [
+          {
+              "id": "hotels",
+              "name": "Hotels",
+              "img": "/assets/images/location/Hotels.jpg"
+          },{
+              "id": "fine-dining",
+              "name": "Fine Dining",
+              "img": "/assets/images/location/FineDining.jpg"
+          },{
+              "id": "casual-dining",
+              "name": "Casual Dining",
+              "img": "/assets/images/location/CasualDining.jpg"
+          },{
+              "id": "daycares",
+              "name": "Day Cares",
+              "img": "/assets/images/location/Daycares.jpg"
+          }
+      ] 
+    }
+  ],
+  "baystreetaccess": [
+    {
+      "id": "bay-street",
+      "button": "VIA BAY STREET",
+      "video": "/assets/images/location/access_diagram/EntryAccess-A-web.mp4",
+      "img": "/assets/images/location/access_diagram/EntryAccess-A-web.jpg",
+      "caption": "Bay Park Centre features direct pedestrian access via Bay Street; simply enter through the plaza and into the lobby, and take the elevators to any office level."
+    },{ 
+      "id": "acc-bridge",
+      "button": "VIA AIR CANADA CENTRE",
+      "video": "/assets/images/location/access_diagram/EntryAccess-B-web.mp4",
+      "img": "/assets/images/location/access_diagram/EntryAccess-B-web.jpg",
+      "caption": "From the Air Canada Centre, office tenants can access 81 Bay Street via the ACC bridge, through the fourth floor lobby, and up to the office levels via the elevators."
+    },{  
+      "id": "teamway",
+      "button": "VIA TEAMWAY",
+      "video": "/assets/images/location/access_diagram/EntryAccess-C-web.mp4",
+      "img": "/assets/images/location/access_diagram/EntryAccess-C-web.jpg",
+      "caption": "A teamway linking 81 and 141 Bay Street together and to greater Toronto allows immediate access to the lobby and offices beyond."
+    },{  
+      "id": "north-portal",
+      "button": "VIA NORTH PORTAL",
+      "video": "/assets/images/location/access_diagram/EntryAccess-D-web.mp4",
+      "img": "/assets/images/location/access_diagram/EntryAccess-D-web.jpg",
+      "caption": "Through the North Portal, office tenants can move directly up to the elevated park and into the sky lobby, where they can take an elevator to any office level."
+    }
+  ],
+  "siteaccess": [
+      {
+      "id": "union-station",
+      "button": "VIA UNION STATION",
+      "video": "/assets/images/location/access_diagram/SiteAccess-A-web.mp4",
+      "img": "/assets/images/location/access_diagram/SiteAccess-A-web.jpg",
+      "caption": "Union Station connects to Bay Park Centre through a series of pedestrian bridges that link directly to each building's sky lobby -and directly up to any office level."
+      },{
+      "id": "vehicular-access",
+      "button": "VEHICULAR ACCESS",
+      "video": "/assets/images/location/access_diagram/SiteAccess-B-web.mp4",
+      "img": "/assets/images/location/access_diagram/SiteAccess-B-web.jpg",
+      "caption": "81 Bay Street is very accessible by car, whether via the taxi dropoff or parking via Bay Street and Yonge Street, and also benefits from easy access to the adjacent bus terminal."
+      }
+  ]
+}

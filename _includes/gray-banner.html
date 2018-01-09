@@ -1,0 +1,28 @@
+<div id="{{include.id}}" class="row gray-banner-wrapper">
+	<div class="row">
+	<div class="banner-title col-sm-12 {% if include.images %}col-md-3 col-md-pull-1 col-lg-4{%else%}col-md-6{%endif%}">
+		<h3>
+			{{include.title}}
+			<!--<hr class="visible-xs visible-sm">		-->
+		</h3>
+	</div>
+	<div class="banner-content col-sm-12 {% if include.images %}col-md-9 col-md-pull-1 col-lg-7{%else%}col-md-6{%endif%}">
+		
+		{% if include.images %}
+		<div class="banner-img-content col-sm-12 col-md-6">
+			{{include.images}}
+		</div>
+		{% endif %}
+		
+		<div class="banner-para-content col-xs-12 col-sm-9 col-md-6">
+			{{include.paragraph-content}}
+		</div>		
+	</div>
+	</div>
+	{% if include.slideshow %}
+		<div class="m30"></div>
+		<div class="row">
+			{% include slideshow.html%}
+		</div>
+	{% endif %}
+</div>

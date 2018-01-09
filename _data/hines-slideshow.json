@@ -1,0 +1,20 @@
+{
+  "slideshow" : [  
+    {
+      "url": "/assets/images/team/hines/williams-tower.jpg",
+      "caption": "Williams Tower - Houston (© Hines)"
+    },{
+      "url": "/assets/images/team/hines/wells-fargo.jpg",
+      "caption": "Wells Fargo Center - Minneapolis (© Hines)"
+    },{
+      "url": "/assets/images/team/hines/calgary-final.jpg",
+      "caption": "Eighth Avenue Place - Calgary (© Hines)"
+    },{
+      "url": "/assets/images/team/hines/river-point-marketing.jpg",
+      "caption": "River Point - Chicago (© Hines)"
+    },{
+      "url": "/assets/images/team/hines/transbay-tower.jpg",
+      "caption": "Salesforce Tower - San Francisco (© Hines)"
+    }  
+  ]
+}

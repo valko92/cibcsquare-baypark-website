@@ -1,0 +1,213 @@
+<header class="navbar navbar-fixed-top">
+
+  <div class="container-fluid">
+    <nav class="row">
+      <div id="navbar" class="navbar-collapse">
+		  
+		<!--logo shift to top for smaller devices  -->
+		<div class="hidden-md hidden-lg logo-wrapper-md row nav-wrapper">
+			<button class="hidden-md hidden-lg col-xs-4 menu-icon-wrapper menu-icon pull-left">
+				<img class="responsive-img" src="/assets/images/icons/icon-menu.png" />
+			</button>  
+			<div class=" col-xs-8 col-md-12 logo-wrapper">
+				<a href="/">
+					<img class="header-logo-img img-responsive center-block" src="/assets/images/logos/bay-park-centre-logo.png" />
+				</a>
+			</div>
+		</div>  
+		<!--/ logo shift to top for smaller devices-->
+		
+		<ul class="footer-pages">
+			<li class="link1"><button class="plain" data-toggle="modal" data-target="#news">News</button></li> 
+			<li class="link1"><button class="plain" data-toggle="modal" data-target="#legal">Legal</button></li>
+			<li class="link1"><button class="plain" data-toggle="modal" data-target="#contact">Contact</button></li>
+			<li class="link1"><button class="plain" data-toggle="modal" data-target="#community">Community</button></li>
+		</ul>
+		
+        <ul class="text-center nav navbar-nav row top-nav-list desktop-nav">
+            <li class="col-xs-3 col-sm-2">
+              <a class="page-link " href="{{ '/' | prepend: site.baseurl }}"><span class="menu1 {%if page.pageName == 'building'%}active{%endif%}">Building</span></a>
+            </li>  
+            <li class="col-xs-3 col-sm-3 col-md-2">
+              <a class="page-link" href="{{ '/location/' | prepend: site.baseurl }}"><span class="menu1 {%if page.pageName == 'location'%}active{%endif%}">Location</span></a>
+            </li>  
+            <li class="visible-md-inline-block visible-lg-inline-block logo-wrapper-lg logo-wrapper col-md-3"> 
+              <a class="logo-link"  href="/">
+                <img class="header-logo-img img-responsive center-block" src="/assets/images/logos/bay-park-centre-logo.png" alt="Expanded Bay Park Centre logo" />
+              </a>
+            </li>
+            <li class="col-xs-3 col-sm-3 col-md-2">
+              <a class="page-link" href="{{ '/park-amenities/' | prepend: site.baseurl }}"><span class="menu1 {%if page.pageName == 'park-amenities'%}active{%endif%}">Park & Amenities</span></a>
+            </li>  
+            <li class="col-xs-2 col-sm-2">
+              <a class="page-link" href="{{ '/team/' | prepend: site.baseurl }}"><span class="menu1 {%if page.pageName == 'team'%}active{%endif%}">Team</span></a>
+            </li>  
+        </ul>				
+      </div>
+    </nav>
+	
+	<!--Drop down navigation-->
+	<div class="drop-down-mobile-bg visible-xs-block hidden"></div>
+	<div class="row drop-down-nav">
+		<button class="close-drop-down"> 
+			<img src="/assets/images/icons/close_button.png" width="16px"> 
+		</button>
+		<ul class="drop-down-nav-list row navbar-nav panel-group" id="drop-down-parent" role="tablist" aria-multiselectable="true">
+			<li class="col-xs-12 col-sm-3 col-md-2">
+				
+				<a class="visible-xs" href="#building-subpages" role="button" data-toggle="collapse" data-parent="#drop-down-parent" aria-expanded="true" aria-controls="building-subpages">
+					<h4>
+           		 		Building
+            			<span class="{%if page.pageName == 'building'%}active{%endif%}"></span>
+					</h4>
+				</a>
+				
+				<a class="hidden-xs" href="{{ '/' | prepend: site.baseurl }}">
+					<h4>
+            			<span class="{%if page.pageName == 'building'%}active{%endif%}">Building</span>
+					</h4>
+				</a>
+				
+				<ul id="building-subpages"  class="drop-down-subpages panel-collapse collapse {%if page.pageName == 'building'%}in{%endif%}" role="tabpanel" aria-labelledby="drop-down-heading">
+					<li class="col-xs-12 list-group">
+						<a href="{%if page.explicitVar != 'building'%}/{% endif %}#overview">
+							<div class="menu3">Overview</div>
+						</a>
+					</li>
+					<li class="col-xs-12 list-group">
+						<a href="/building/test-fits/">
+							<div class="menu3">Test Fits</div>
+						</a>
+					</li>
+					<li class="col-xs-12 list-group">
+						<a href="/building/views/">
+							<div class="menu3">Views</div>
+						</a>
+					</li>
+					<li class="col-xs-12 list-group">
+						<a href="{%if page.explicitVar != 'building'%}/{% endif %}#efficiency">
+							<div class="menu3">Efficiency & Solar</div>
+						</a>
+					</li>
+					<li class="col-xs-12 list-group">
+						<button class="plain" data-toggle="modal" data-target="#features-and-specs">
+							<div class="menu3">Features & Specs</div>
+						</button>
+					</li>
+				</ul>
+				
+			</li>
+			<li class="col-xs-12 col-sm-3 col-md-2">
+				
+				<a class="visible-xs" href="#location-subpages" role="button" data-toggle="collapse" data-parent="#drop-down-parent" aria-expanded="false" aria-controls="location-subpages">
+					<h4>
+						Location
+						<span class="{%if page.pageName == 'location'%}active{%endif%}"></span>
+					</h4>	
+				</a>
+				
+				<a class="hidden-xs" href="{{ '/location/' | prepend: site.baseurl }}">
+					<h4>
+            			<span class="{%if page.pageName == 'location'%}active{%endif%}">Location</span>
+					</h4>
+				</a>
+				
+				<ul id="location-subpages"  class="drop-down-subpages panel-collapse collapse {%if page.pageName == 'location'%}in{%endif%}" role="tabpanel" aria-labelledby="drop-down-heading">
+					<li class="col-xs-12 list-group">
+						<a href="{%if page.pageName != 'location'%}/location/{% endif %}#neighbourhood">
+							<div class="menu3">Neighbourhood & Connectivity</div>
+						</a>
+					</li>
+					<li class="col-xs-12 list-group">
+						<a href="{%if page.pageName != 'location'%}/location/{% endif %}#site-access">
+							<div class="menu3">Site Access</div>
+						</a>
+					</li>
+					<li class="col-xs-12 list-group">
+						<a href="{%if page.pageName != 'location'%}/location/{% endif %}#regional-connection">
+							<div class="menu3">Regional Connection</div>
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="col-xs-12 col-sm-3 col-md-2 col-md-offset-3">
+				
+				<a class="visible-xs" href="#park-amenities-subpages" role="button" data-toggle="collapse" data-parent="#drop-down-parent" aria-expanded="false" aria-controls="park-amenities-subpages">
+					<h4>
+						Park & Amenities
+						<span class="{%if page.pageName == 'park-amenities'%}active{%endif%}"></span>
+					</h4>
+				</a>
+				
+				<a class="hidden-xs" href="{{ '/park-amenities/' | prepend: site.baseurl }}">
+					<h4>	
+						<span class="{%if page.pageName == 'park-amenities'%}active{%endif%}">Park & Amenities</span>
+					</h4>
+				</a>
+				
+				<ul id="park-amenities-subpages"  class="drop-down-subpages panel-collapse collapse {%if page.pageName == 'park-amenities'%}in{%endif%}" role="tabpanel" aria-labelledby="drop-down-heading">
+					<li class="col-xs-12 list-group">
+						<a href="{%if page.pageName != 'park-amenities'%}/park-amenities/{% endif %}#park">
+							<div class="menu3">Park</div>
+						</a>
+					</li>
+					<li class="col-xs-12 list-group">
+						<a href="{%if page.pageName != 'park-amenities'%}/park-amenities/{% endif %}#amenities">
+							<div class="menu3">Amenities</div>
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="col-xs-12 col-sm-3 col-md-2">
+				
+				<a class="visible-xs" href="#team-subpages" role="button" data-toggle="collapse" data-parent="#drop-down-parent" aria-expanded="false" aria-controls="team-subpages">
+					<h4>
+						Team
+						<span class="{%if page.pageName == 'team'%}active{%endif%}"></span>
+					</h4>
+				</a>
+				
+				<a class="hidden-xs" href="{{ '/team/' | prepend: site.baseurl }}">
+					<h4>
+						<span class="{%if page.pageName == 'team'%}active{%endif%}">Team</span>
+					</h4>
+				</a>
+				
+				<ul id="team-subpages"  class="drop-down-subpages panel-collapse collapse {%if page.pageName == 'team'%}in{%endif%}" role="tabpanel" aria-labelledby="drop-down-heading">
+					<li class="col-xs-12 list-group">
+						<a href="{%if page.pageName != 'team'%}/team/{% endif %}#ivanhoe-cambridge">
+							<div class="menu3">Ivanho&eacute; Cambridge</div>
+						</a>
+					</li>
+					<li class="col-xs-12 list-group">
+						<a href="{%if page.pageName != 'team'%}/team/{% endif %}#hines">
+							<div class="menu3">Hines</div>
+						</a>
+					</li>
+					<li class="col-xs-12 list-group">
+						<a href="{%if page.pageName != 'team'%}/team/{% endif %}#wilkinson-eyre">
+							<div class="menu3">Wilkinson Eyre</div>
+						</a>
+					</li>
+					<li class="col-xs-12 list-group">
+						<a href="{%if page.pageName != 'team'%}/team/{% endif %}#three-teams">
+							<div class="menu3">Adamson Associates</div>
+						</a>
+					</li>
+					<li class="col-xs-12 list-group">
+						<a href="{%if page.pageName != 'team'%}/team/{% endif %}#three-teams">
+							<div class="menu3">Cushman & Wakefield</div>
+						</a>
+					</li>
+					<li class="col-xs-12 list-group">
+						<a href="{%if page.pageName != 'team'%}/team/{% endif %}#three-teams">
+							<div class="menu3">DBOX</div>
+						</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	 <!--/ dropdown navigation-->
+  </div>
+</header>

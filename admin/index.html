@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bay Park Centre Blog CMS</title>
+
+    <!-- Include the styles for the Netlify CMS UI, after your own styles -->
+    <link rel="stylesheet" href="https://unpkg.com/netlify-cms@^1.0.0/dist/cms.css" />
+
+  </head>
+  <body>
+    <!-- Include the script that builds the page and powers Netlify CMS -->
+    <script src="https://unpkg.com/netlify-cms@^1.0.0/dist/cms.js"></script>
+    <!-- custom css for preview -->
+    <script>
+      CMS.registerPreviewStyle("/admin/custom_preview.min.css");
+    </script>
+    <script>
+      var PostPreview = createClass({
+        render: function() {
+          var entry = this.props.entry;
+          var image = entry.getIn(['data', 'thumbnail']);
+          var bg = '';
+          if (this.props.getAsset(image) !== null) {
+            bg = this.props.getAsset(image).toString();
+          }
+          var date = new Date(entry.getIn(['data', 'date']));
+          date = date.toLocaleDateString("en-US");
+          return h('div', {"className": "nc-widgetPreview"},
+            h('h1', {"className": "title"}, entry.getIn(['data', 'title'])),
+            h('div', {"className": "date"}, date),
+            h('img', {src: bg}),
+            h('div', {"className": "body"}, this.props.widgetFor('body'))
+          );
+        }
+      });
+      
+      CMS.registerPreviewTemplate("blog", PostPreview);
+      </script>
+  </body>
+</html>

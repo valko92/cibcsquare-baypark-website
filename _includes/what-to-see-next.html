@@ -1,0 +1,45 @@
+<div class="row">
+    <div class="col-md-10 col-md-offset-1 what-next-wrapper">
+        
+        <center class="what-next-title">    
+            <h2>
+                What to see next
+            </h2>
+        </center>
+        
+        <div class="col-md-6 next-section">
+            <a href="{{include.link1}}">
+                <div class="section-text {{include.hover}}">
+                    <div class="section-image">
+                        <img class="hidden-xs" src="{{include.image1}}" alt="{{include.imageCaption1}}">
+                        <div class="visible-xs mobile-section-image" style="background:url({{include.image1}}) no-repeat right center;"></div>
+                    </div>
+                    <div>
+                        <div class="bar"></div>	
+                        <div class="section-title">
+                            <h2>{{include.title1}}</h2>
+                        </div>
+                        {{include.arrow1}}    
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 next-section">
+            <a href="{{include.link2}}">
+                <div class="section-text {{include.hover}}">
+                    <div class="section-image">	
+                        <img class="hidden-xs" src="{{include.image2}}" alt="{{include.imageCaption2}}">
+                        <div class="visible-xs mobile-section-image" style="background:url({{include.image2}}) no-repeat left center;"></div>
+                    </div>
+                    <div>
+                        <div class="bar"></div> 
+                        <div class="section-title">
+                            <h2>{{include.title2}}</h2>
+                        </div>
+                        {{include.arrow2}}
+                    </div>	
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

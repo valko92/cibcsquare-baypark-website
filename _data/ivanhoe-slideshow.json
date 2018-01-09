@@ -1,0 +1,26 @@
+{
+  "slideshow" : [
+    {
+      "url": "/assets/images/team/ivanhoe-cambridge/EIGHTH_AVENUE_PLACE_CALGARY.jpg",
+      "caption": "Eighth Avenue Place - Calgary (© Ivanhoé Cambridge)"
+    },{
+      "url": "/assets/images/team/ivanhoe-cambridge/Maison_Manuvie_Montreal_001.jpg",
+      "caption": "Maison Manuvie - Montreal (© Ivanhoé Cambridge)"
+    },{
+      "url": "/assets/images/team/ivanhoe-cambridge/Tours_DUO_Paris_PV01.jpg",
+      "caption": "DUO - Paris (© Ivanhoé Cambridge)"
+    },{
+      "url": "/assets/images/team/ivanhoe-cambridge/Tours_DUO_Paris_PV05.jpg",
+      "caption": "DUO - Paris (© Ivanhoé Cambridge)"
+    },{
+      "url": "/assets/images/team/ivanhoe-cambridge/EIGTH_AVENUE_PLACE_01.jpg",
+      "caption": "Eight Avenue Place - Calgary (© Ivanhoé Cambridge)"
+    },{
+      "url": "/assets/images/team/ivanhoe-cambridge/RIVER_POINT_CHICAGO.jpg",
+      "caption": "River Point - Chicago (© Ivanhoé Cambridge)"
+    },{ 
+      "url": "/assets/images/team/ivanhoe-cambridge/TOUR__T1_IMMEUBLE_LA_DEFENSE.jpg",
+      "caption": "Tour T1 and Immeuble B - Paris, La Defense (© Ivanhoé Cambridge)"
+    }
+  ]
+}
