@@ -67,7 +67,6 @@ you can also run locally in production: ``JEKYLL_ENV=production jekyll serve``
 
 #### For Production:
 
-* Delete "Disallow: /" in **Robots.txt**
 
----
-## To Do:
+* change "branch to update" in admin config to master after its live
+* CodePipeline and CodeBuild for Producution change to new repo before pushing code to Master branch

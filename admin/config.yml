@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: DboxDev/bayparkcentre-website   # Path to your Github repository
+  repo: DboxDev/cibcsquare-baypark-website   # Path to your Github repository
   branch: develop              # Branch to update
   base_url: https://bayparkcentre-auth.dbxd.com
 
