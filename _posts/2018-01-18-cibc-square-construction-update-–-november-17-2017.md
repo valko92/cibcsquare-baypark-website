@@ -2,7 +2,7 @@
 layout: post
 title: 'CIBC Square Construction Update – November 17, 2017'
 date: 2017-11-17T16:33:20.000Z
-thumbnail: /assets/images/uploads/cibc_square-20171215-140501.jpg
+thumbnail: /assets/images/uploads/cibc_square-20171117-153655.jpg
 ---
 Dear neighbours, 
 
