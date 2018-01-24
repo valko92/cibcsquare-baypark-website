@@ -1677,28 +1677,28 @@
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     font-size: 26px;
-    text-align: center;
+    text-align: left;
 	text-transform: none;
 	margin-bottom: 10px;
 	position: relative;
+	p {
+		margin: 20px 0;
+	}
 	&.small {
-		height: calc(30px*3);
-		p {
-			overflow: hidden;
-			height: calc(30px*3);
-			&:after {
-				content: "";
-				color: #FFF;
-				font-weight: 400;
-				font-size: 25px;
-				position: absolute;
-				bottom: -4px;
-				right: 0;
-				background: linear-gradient(to right, rgba(44, 44, 53, 0), rgba(44, 44, 53, 1) 50%);
-				width: 40%;
-				height: 30px;
-				text-align: right;
-			}
+		height: calc(34px*3);
+		overflow: hidden;
+		&:after {
+			content: "";
+			color: #FFF;
+			font-weight: 400;
+			font-size: 25px;
+			position: absolute;
+			bottom: -4px;
+			right: 0;
+			background: linear-gradient(to right, rgba(44, 44, 53, 0), rgba(44, 44, 53, 1) 50%);
+			width: 24%;
+			height: 30px;
+			text-align: right;
 		}
 	}
 	&.big {
@@ -1708,26 +1708,45 @@
 
 @media screen and (min-width:768px) {
     .post-content {
-		font-size: 35px;
+		font-size: 30px;
 		&.small {
-			height: calc(40px*3);
-			p {
-				overflow: hidden;
-				height: calc(40px*3);
-				&:after {
-					width: 10%;
-					height: 40px;
-				}
+			height: calc(38px*3);
+			overflow: hidden;
+			&:after {
+				width: 35%;
+				height: 40px;
 			}
-			
 		}
     }
+}
+@media screen and (min-width:1024px) {
+	.post {
+		margin: 25px auto 100px auto;
+		width: 80%;
+	}
+	.post-content {
+		&.small {
+			&:after {
+				width: 30%;
+			}
+		}
+    }
+}
+@media screen and (min-width:1366px) {
+	.post {
+		width: 60%;
+	}
+}
+@media screen and (min-width:1920px) {
+	.post {
+		width: 50%;
+	}
 }
 
 .modal-title-image {
 	display: block;
 	margin: 25px; margin-bottom: 50px;
-	max-width: 500px;
+	max-width: 400px;
 	width: calc(100% - 50px);
 	height: auto;
 	@media (min-width: 768px) {

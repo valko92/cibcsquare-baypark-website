@@ -98,7 +98,7 @@ a {
 }
 
 a:visited {
-  color: #484c54;
+  color: #cda35c;
 }
 
 a:hover {
@@ -8073,24 +8073,23 @@ footer .footer-social-logo {
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   font-size: 26px;
-  text-align: center;
+  text-align: left;
   text-transform: none;
   margin-bottom: 10px;
   position: relative;
 }
 
+.post-content p {
+  margin: 20px 0;
+}
+
 .post-content.small {
-  height: -webkit-calc(30px*3);
-  height: calc(30px*3);
-}
-
-.post-content.small p {
+  height: -webkit-calc(34px*3);
+  height: calc(34px*3);
   overflow: hidden;
-  height: -webkit-calc(30px*3);
-  height: calc(30px*3);
 }
 
-.post-content.small p:after {
+.post-content.small:after {
   content: "";
   color: #FFF;
   font-weight: 400;
@@ -8101,7 +8100,7 @@ footer .footer-social-logo {
   background: -webkit-gradient(linear, left top, right top, from(rgba(44, 44, 53, 0)), to(#2c2c35));
   background: -webkit-linear-gradient(left, rgba(44, 44, 53, 0), #2c2c35 50%);
   background: linear-gradient(to right, rgba(44, 44, 53, 0), #2c2c35 50%);
-  width: 40%;
+  width: 24%;
   height: 30px;
   text-align: right;
 }
@@ -8112,20 +8111,38 @@ footer .footer-social-logo {
 
 @media screen and (min-width: 768px) {
   .post-content {
-    font-size: 35px;
+    font-size: 30px;
   }
   .post-content.small {
-    height: -webkit-calc(40px*3);
-    height: calc(40px*3);
-  }
-  .post-content.small p {
+    height: -webkit-calc(38px*3);
+    height: calc(38px*3);
     overflow: hidden;
-    height: -webkit-calc(40px*3);
-    height: calc(40px*3);
   }
-  .post-content.small p:after {
-    width: 10%;
+  .post-content.small:after {
+    width: 35%;
     height: 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .post {
+    margin: 25px auto 100px auto;
+    width: 80%;
+  }
+  .post-content.small:after {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .post {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .post {
+    width: 50%;
   }
 }
 
@@ -8133,7 +8150,7 @@ footer .footer-social-logo {
   display: block;
   margin: 25px;
   margin-bottom: 50px;
-  max-width: 500px;
+  max-width: 400px;
   width: -webkit-calc(100% - 50px);
   width: calc(100% - 50px);
   height: auto;
@@ -8208,6 +8225,7 @@ a:hover, a:active, a:focus {
 
 a:visited {
   opacity: 0.9;
+  color: #cda35c;
 }
 
 *:focus, *:active {
