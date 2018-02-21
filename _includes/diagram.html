@@ -30,7 +30,7 @@
 		</div>
 		<div class="col-xs-12 col-md-8 media-section">
       {% if include.id != 'neighborhood'%}
-        <video poster="{{include.data[0].img}}">
+        <video playsinline muted poster="{{include.data[0].img}}">
           <source src="{{include.data[0].video}}" type="video/mp4">
           <span> Your browser does not support the video tag </span>
         </video>

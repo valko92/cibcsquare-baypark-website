@@ -2,7 +2,7 @@
 	    {% if page.pageName == 'building' %}
 			<button class="link1 play-button" data-toggle="modal" data-target="#vimeo">Play</button>
 		{% endif %}
-		<video muted preload loop="loop" autoplay not-poster="{{page.looping-video-poster}}" class="looping-intro-vid">
+		<video playsinline muted preload loop="loop" autoplay not-poster="{{page.looping-video-poster}}" class="looping-intro-vid">
 			<source not-src="{{page.looping-video}}" type="video/mp4">
 			<span> Your browser does not support the video tag </span>
 		</video>
