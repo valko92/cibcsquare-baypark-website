@@ -47,7 +47,7 @@
       "button": "VIA BAY STREET",
       "video": "/assets/images/location/access_diagram/EntryAccess-A-web.mp4",
       "img": "/assets/images/location/access_diagram/EntryAccess-A-web.jpg",
-      "caption": "Bay Park Centre features direct pedestrian access via Bay Street; simply enter through the plaza and into the lobby, and take the elevators to any office level."
+      "caption": "CIBC Square features direct pedestrian access via Bay Street; simply enter through the plaza and into the lobby, and take the elevators to any office level."
     },{ 
       "id": "acc-bridge",
       "button": "VIA AIR CANADA CENTRE",
@@ -74,7 +74,7 @@
       "button": "VIA UNION STATION",
       "video": "/assets/images/location/access_diagram/SiteAccess-A-web.mp4",
       "img": "/assets/images/location/access_diagram/SiteAccess-A-web.jpg",
-      "caption": "Union Station connects to Bay Park Centre through a series of pedestrian bridges that link directly to each building's sky lobby -and directly up to any office level."
+      "caption": "Union Station connects to CIBC Square through a series of pedestrian bridges that link directly to each building's sky lobby -and directly up to any office level."
       },{
       "id": "vehicular-access",
       "button": "VEHICULAR ACCESS",

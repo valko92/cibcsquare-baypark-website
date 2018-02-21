@@ -1,106 +1,295 @@
 @font-face {
-    font-family: 'freight-display-pro';
+    font-family: 'freight-display-pro'; /* karbon */
     src: url('/assets/fonts/garagefonts-freightdispprobook-webfont.eot');
     src: url('/assets/fonts/garagefonts-freightdispprobook-webfont.eot?#iefix') format('embedded-opentype'),
          url('/assets/fonts/garagefonts-freightdispprobook-webfont.woff2') format('woff2'),
          url('/assets/fonts/garagefonts-freightdispprobook-webfont.woff') format('woff'),
-         url('/assets/fonts/garagefonts-freightdispprobook-webfont.ttf') format('truetype'),
-         url('/assets/fonts/garagefonts-freightdispprobook-webfont.svg#freightdisp_probook') format('svg');
+         url('/assets/fonts/garagefonts-freightdispprobook-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'freight-sans-pro';
+    font-family: 'freight-sans-pro'; /* karbon */
     src: url('/assets/fonts/garagefonts-freightsansprobook-webfont.eot');
     src: url('/assets/fonts/garagefonts-freightsansprobook-webfont.eot?#iefix') format('embedded-opentype'),
          url('/assets/fonts/garagefonts-freightsansprobook-webfont.woff2') format('woff2'),
          url('/assets/fonts/garagefonts-freightsansprobook-webfont.woff') format('woff'),
-         url('/assets/fonts/garagefonts-freightsansprobook-webfont.ttf') format('truetype'),
-         url('/assets/fonts/garagefonts-freightsansprobook-webfont.svg#freightsans_probook') format('svg');
+         url('/assets/fonts/garagefonts-freightsansprobook-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+  font-family: 'karbon';
+  src: url('/assets/fonts/karbon/KarbonWeb-Regular.eot');
+  src: url('/assets/fonts/karbon/KarbonWeb-Regular.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/karbon/KarbonWeb-Regular.woff2') format('woff2'),
+       url('/assets/fonts/karbon/KarbonWeb-Regular.woff') format('woff'),
+       url('/assets/fonts/karbon/KarbonWeb-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
-    font-family: 'freight-text-pro-light';
+    font-family: 'freight-text-pro-light'; /* karbon-light */
     src: url('/assets/fonts/garagefonts-freightsansprolight-webfont.eot');
     src: url('/assets/fonts/garagefonts-freightsansprolight-webfont.eot?#iefix') format('embedded-opentype'),
          url('/assets/fonts/garagefonts-freightsansprolight-webfont.woff2') format('woff2'),
          url('/assets/fonts/garagefonts-freightsansprolight-webfont.woff') format('woff'),
-         url('/assets/fonts/garagefonts-freightsansprolight-webfont.ttf') format('truetype'),
-         url('/assets/fonts/garagefonts-freightsansprolight-webfont.svg#freightsans_prolight') format('svg');
+         url('/assets/fonts/garagefonts-freightsansprolight-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+  font-family: 'karbon-light';
+  src: url('/assets/fonts/karbon/KarbonWeb-Light.eot');
+  src: url('/assets/fonts/karbon/KarbonWeb-Light.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/karbon/KarbonWeb-Light.woff2') format('woff2'),
+       url('/assets/fonts/karbon/KarbonWeb-Light.woff') format('woff'),
+       url('/assets/fonts/karbon/KarbonWeb-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
-    font-family: 'freight-text-pro';
+    font-family: 'freight-text-pro'; /* karbon */
     src: url('/assets/fonts/garagefonts-freighttextprobook-webfont.eot');
     src: url('/assets/fonts/garagefonts-freighttextprobook-webfont.eot?#iefix') format('embedded-opentype'),
          url('/assets/fonts/garagefonts-freighttextprobook-webfont.woff2') format('woff2'),
          url('/assets/fonts/garagefonts-freighttextprobook-webfont.woff') format('woff'),
-         url('/assets/fonts/garagefonts-freighttextprobook-webfont.ttf') format('truetype'),
-         url('/assets/fonts/garagefonts-freighttextprobook-webfont.svg#freighttext_probook') format('svg');
+         url('/assets/fonts/garagefonts-freighttextprobook-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+  font-family: 'karbon';
+  src: url('/assets/fonts/karbon/KarbonWeb-Regular.eot');
+  src: url('/assets/fonts/karbon/KarbonWeb-Regular.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/karbon/KarbonWeb-Regular.woff2') format('woff2'),
+       url('/assets/fonts/karbon/KarbonWeb-Regular.woff') format('woff'),
+       url('/assets/fonts/karbon/KarbonWeb-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
-    font-family: 'freight-sans-pro-medium';
+    font-family: 'freight-sans-pro-medium'; /* karbon-medium */
     src: url('/assets/fonts/garagefonts-freightsanspromedium-webfont.eot');
     src: url('/assets/fonts/garagefonts-freightsanspromedium-webfont.eot?#iefix') format('embedded-opentype'),
          url('/assets/fonts/garagefonts-freightsanspromedium-webfont.woff2') format('woff2'),
          url('/assets/fonts/garagefonts-freightsanspromedium-webfont.woff') format('woff'),
-         url('/assets/fonts/garagefonts-freightsanspromedium-webfont.ttf') format('truetype'),
-         url('/assets/fonts/garagefonts-freightsanspromedium-webfont.svg#freightsans_promedium') format('svg');
+         url('/assets/fonts/garagefonts-freightsanspromedium-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+  font-family: 'karbon-medium';
+  src: url('/assets/fonts/karbon/KarbonWeb-Medium.eot');
+  src: url('/assets/fonts/karbon/KarbonWeb-Medium.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/karbon/KarbonWeb-Medium.woff2') format('woff2'),
+       url('/assets/fonts/karbon/KarbonWeb-Medium.woff') format('woff'),
+       url('/assets/fonts/karbon/KarbonWeb-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'karbon';
+  src: url('/assets/fonts/karbon/KarbonWeb-Thin.eot');
+  src: url('/assets/fonts/karbon/KarbonWeb-Thin.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/karbon/KarbonWeb-Thin.woff2') format('woff2'),
+       url('/assets/fonts/karbon/KarbonWeb-Thin.woff') format('woff'),
+       url('/assets/fonts/karbon/KarbonWeb-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'karbon';
+  src: url('/assets/fonts/karbon/KarbonWeb-Regular.eot');
+  src: url('/assets/fonts/karbon/KarbonWeb-Regular.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/karbon/KarbonWeb-Regular.woff2') format('woff2'),
+       url('/assets/fonts/karbon/KarbonWeb-Regular.woff') format('woff'),
+       url('/assets/fonts/karbon/KarbonWeb-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'karbon';
+  src: url('/assets/fonts/karbon/KarbonWeb-Bold.eot');
+  src: url('/assets/fonts/karbon/KarbonWeb-Bold.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/karbon/KarbonWeb-Bold.woff2') format('woff2'),
+       url('/assets/fonts/karbon/KarbonWeb-Bold.woff') format('woff'),
+       url('/assets/fonts/karbon/KarbonWeb-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'karbon';
+  src: url('/assets/fonts/karbon/KarbonWeb-SemiBold.eot');
+  src: url('/assets/fonts/karbon/KarbonWeb-SemiBold.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/karbon/KarbonWeb-SemiBold.woff2') format('woff2'),
+       url('/assets/fonts/karbon/KarbonWeb-SemiBold.woff') format('woff'),
+       url('/assets/fonts/karbon/KarbonWeb-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'karbon';
+  src: url('/assets/fonts/karbon/KarbonWeb-LightItalic.eot');
+  src: url('/assets/fonts/karbon/KarbonWeb-LightItalic.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/karbon/KarbonWeb-LightItalic.woff2') format('woff2'),
+       url('/assets/fonts/karbon/KarbonWeb-LightItalic.woff') format('woff'),
+       url('/assets/fonts/karbon/KarbonWeb-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'karbon';
+  src: url('/assets/fonts/karbon/KarbonWeb-ThinItalic.eot');
+  src: url('/assets/fonts/karbon/KarbonWeb-ThinItalic.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/karbon/KarbonWeb-ThinItalic.woff2') format('woff2'),
+       url('/assets/fonts/karbon/KarbonWeb-ThinItalic.woff') format('woff'),
+       url('/assets/fonts/karbon/KarbonWeb-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'karbon';
+  src: url('/assets/fonts/karbon/KarbonWeb-HairlineItalic.eot');
+  src: url('/assets/fonts/karbon/KarbonWeb-HairlineItalic.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/karbon/KarbonWeb-HairlineItalic.woff2') format('woff2'),
+       url('/assets/fonts/karbon/KarbonWeb-HairlineItalic.woff') format('woff'),
+       url('/assets/fonts/karbon/KarbonWeb-HairlineItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'karbon';
+  src: url('/assets/fonts/karbon/KarbonWeb-Medium.eot');
+  src: url('/assets/fonts/karbon/KarbonWeb-Medium.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/karbon/KarbonWeb-Medium.woff2') format('woff2'),
+       url('/assets/fonts/karbon/KarbonWeb-Medium.woff') format('woff'),
+       url('/assets/fonts/karbon/KarbonWeb-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'karbon';
+  src: url('/assets/fonts/karbon/KarbonWeb-Light.eot');
+  src: url('/assets/fonts/karbon/KarbonWeb-Light.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/karbon/KarbonWeb-Light.woff2') format('woff2'),
+       url('/assets/fonts/karbon/KarbonWeb-Light.woff') format('woff'),
+       url('/assets/fonts/karbon/KarbonWeb-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'karbon';
+  src: url('/assets/fonts/karbon/KarbonWeb-Hairline.eot');
+  src: url('/assets/fonts/karbon/KarbonWeb-Hairline.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/karbon/KarbonWeb-Hairline.woff2') format('woff2'),
+       url('/assets/fonts/karbon/KarbonWeb-Hairline.woff') format('woff'),
+       url('/assets/fonts/karbon/KarbonWeb-Hairline.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'karbon';
+  src: url('/assets/fonts/karbon/KarbonWeb-SemiboldItalic.eot');
+  src: url('/assets/fonts/karbon/KarbonWeb-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/karbon/KarbonWeb-SemiboldItalic.woff2') format('woff2'),
+       url('/assets/fonts/karbon/KarbonWeb-SemiboldItalic.woff') format('woff'),
+       url('/assets/fonts/karbon/KarbonWeb-SemiboldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'karbon';
+  src: url('/assets/fonts/karbon/KarbonWeb-MediumItalic.eot');
+  src: url('/assets/fonts/karbon/KarbonWeb-MediumItalic.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/karbon/KarbonWeb-MediumItalic.woff2') format('woff2'),
+       url('/assets/fonts/karbon/KarbonWeb-MediumItalic.woff') format('woff'),
+       url('/assets/fonts/karbon/KarbonWeb-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'karbon';
+  src: url('/assets/fonts/karbon/KarbonWeb-BoldItalic.eot');
+  src: url('/assets/fonts/karbon/KarbonWeb-BoldItalic.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/karbon/KarbonWeb-BoldItalic.woff2') format('woff2'),
+       url('/assets/fonts/karbon/KarbonWeb-BoldItalic.woff') format('woff'),
+       url('/assets/fonts/karbon/KarbonWeb-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'karbon';
+  src: url('/assets/fonts/karbon/KarbonWeb-RegularItalic.eot');
+  src: url('/assets/fonts/karbon/KarbonWeb-RegularItalic.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/karbon/KarbonWeb-RegularItalic.woff2') format('woff2'),
+       url('/assets/fonts/karbon/KarbonWeb-RegularItalic.woff') format('woff'),
+       url('/assets/fonts/karbon/KarbonWeb-RegularItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
 
 body, td, span, p, input {
-  color: #69727f;
-  font-family: 'freight-text-pro';
+  color: #A7A9AC;
+  font-family: 'karbon';
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 h4, .h4, h6 {
-  color:#2c2c35;
-  font-family: 'freight-text-pro';
+  color:#6D6E71;
+  font-family: 'karbon';
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
-  color:#2c2c35;
-  font-family: 'freight-display-pro';
+  color:#6D6E71;
+  font-family: 'karbon';
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 32px;
   letter-spacing: 0px;
   line-height: 1.2;
-  color: rgb(44, 44, 53);
+  color: #000;
 }
 
 h2 {
-  color:#2c2c35;
-  font-family: 'freight-display-pro';
+  color:#6D6E71;
+  font-family: 'karbon';
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 26px;
   letter-spacing: 0px;
   line-height: 1.2;
-  color: rgb(44, 44, 53);
+  color: #000;
 }
 
 h3 {
-  color: #69727f;
-  font-family: 'freight-sans-pro-medium';
+  color: #A7A9AC;
+  font-family: 'karbon-medium';
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -110,8 +299,8 @@ h3 {
 }
 
 h5 {
-  color: #69727f;
-  font-family: 'freight-text-pro';
+  color: #6D6E71;
+  font-family: 'karbon';
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -119,8 +308,8 @@ h5 {
 }
 
 .body1 {
-  color: #69727f;
-  font-family: 'freight-text-pro';
+  color: #6D6E71;
+  font-family: 'karbon';
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -130,7 +319,7 @@ h5 {
 
 .body2 {
   color: #b9bdc3;
-  font-family: 'freight-sans-pro';
+  font-family: 'karbon';
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -140,7 +329,7 @@ h5 {
 
 .caption {
   color: #9ba1a9; 
-  font-family: 'freight-sans-pro';
+  font-family: 'karbon';
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -150,7 +339,7 @@ h5 {
 
 .menu1 {
   color: #6b717d;
-  font-family: 'freight-text-pro';
+  font-family: 'karbon';
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -171,7 +360,7 @@ h5 {
 
 .menu2 {
   color: white;
-  font-family: 'freight-text-pro';
+  font-family: 'karbon';
   font-weight: normal;
   font-size: 17px;
   letter-spacing: normal;
@@ -181,7 +370,7 @@ h5 {
 
 .menu3 {
   color: #9ba1a9;
-  font-family: 'freight-sans-pro';
+  font-family: 'karbon';
   font-weight: normal;
   font-size: 16px;
   letter-spacing: 0;
@@ -209,10 +398,10 @@ button.link1 {
 }
 
 .link2 {
-  font-family: 'freight-display-pro';
+  font-family: 'karbon';
   font-weight: normal;
   font-size: 20px;
-  color: rgb(44, 44, 53);
+  color: #000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -246,7 +435,7 @@ button.link1 {
 
   .menu3 {
     color: #9ba1a9;
-    font-family: 'freight-sans-pro';
+    font-family: 'karbon';
     font-weight: normal;
     font-size: 16px;
     letter-spacing: 0;
@@ -260,13 +449,13 @@ button.link1 {
 
 
 .serif {
-  font-family: 'freight-display-pro';
+  font-family: 'karbon';
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 .sans {
-  font-family: 'freight-sans-pro';
+  font-family: 'karbon';
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -274,7 +463,7 @@ button.link1 {
 
 a {
   text-decoration:none;
-  color:#cda35c;
+  color:#C7C8CA;
 }
 
 h1.heading {

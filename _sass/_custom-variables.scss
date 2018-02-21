@@ -9,13 +9,13 @@ $bootstrap-sass-asset-helper: false !default;
 //## Gray and brand colors for use across Bootstrap.
 
 $gray-base:              #000 !default;
-$gray-darker:            #2c2c35 !default; // #222
-$gray-dark:              #454545 !default;   // #333
+$gray-darker:            #6D6E71 !default; // #222
+$gray-dark:              #6D6E71 !default;   // #333
 $gray:                   #6b717d !default; // #555
 $gray-light:             #babdc4 !default; // #777
-$gray-lighter:           #eaebed !default; // #eee
+$gray-lighter:           #E6E7E8 !default; // #eee
 
-$brand-primary:         #cda35c !default; // #337ab7
+$brand-primary:         #babdc4 !default; // #337ab7
 $brand-success:         #5cb85c !default;
 $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
@@ -29,7 +29,7 @@ $brand-danger:          #d9534f !default;
 //** Background color for `<body>`.
 $body-bg:               #fff !default;
 //** Global text color on `<body>`.
-$text-color:            #2c2c35 !default;
+$text-color:            #6D6E71 !default;
 
 //** Global textual link color.
 $link-color:            $brand-primary !default;
@@ -44,10 +44,10 @@ $link-hover-decoration: underline !default;
 //## Font, line-height, and color for body text, headings, and more.
 
 $font-family-sans-serif:  "freight-sans-pro", Helvetica, Arial, sans-serif !default;
-$font-family-serif:       "freight-display-pro", "Times New Roman", Times, serif !default;
+$font-family-serif:       "karbon", "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
-$font-family-base:        "freight-text-pro" !default;
+$font-family-base:        "karbon" !default;
 
 $font-size-base:          14px !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px

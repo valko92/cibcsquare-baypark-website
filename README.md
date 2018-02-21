@@ -1,4 +1,4 @@
-# Bay Park Centre Website - Reboot
+# CIBC Square Website - Reboot
 
 master: [![Build Status](https://travis-ci.com/DboxDev/bayparkcentre-website.svg?token=dp5EomWdmLUc5zuyvWUy&branch=master)](https://travis-ci.com/DboxDev/bayparkcentre-website)
 

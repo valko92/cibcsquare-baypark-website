@@ -904,12 +904,11 @@ $( document ).ready( function ()
                 $('.news-rack').append(
                     '<div class="news-article hover-area ">' +
                         '<a href="'+y[3]+'" target="_blank" style="transition:none;">' +
-                            '<div class="bar bgclr-honey" style="margin-bottom:0.5em;margin-top:2em;"></div>' +
                                 '<p class="link1 white">' + y[1] + '</p>'+
                                 '<p class="link1 white" style="text-transform:uppercase;">' + y[2] + '</p>'+
                                 '<h2 class="white">'+ y[0] + '</h2>' +
                                 '<p class="honey link1">Read More' + 
-                                    '<img src="/assets/images/icons/arrow-right-honey-link.png" style="width:1.5em;" class="jumping-arrow">' + 
+                                    '<img src="/assets/images/icons/arrow-right-grey-link.png" style="width:1.5em;" class="jumping-arrow">' + 
                                 '</p>'+
                             '</div>'+
                         '</a>'+
@@ -936,12 +935,11 @@ $( document ).ready( function ()
                     $('.news-rack').append(
                         '<div class="news-article hover-area ">' +
                             '<a href="'+y[3]+'" target="_blank" style="transition:none;">' +
-                                '<div class="bar bgclr-honey" style="margin-bottom:0.5em;margin-top:2em;"></div>' +
                                     '<p class="link1 white">' + y[1] + '</p>'+
                                     '<p class="link1 white" style="text-transform:uppercase;">' + y[2] + '</p>'+
                                     '<h2 class="white">'+ y[0] + '</h2>' +
                                     '<p class="honey link1">Read More' + 
-                                        '<img src="/assets/images/icons/arrow-right-honey-link.png" style="width:1.5em;" class="jumping-arrow">' + 
+                                        '<img src="/assets/images/icons/arrow-right-grey-link.png" style="width:1.5em;" class="jumping-arrow">' + 
                                     '</p>'+
                                 '</div>'+
                             '</a>'+

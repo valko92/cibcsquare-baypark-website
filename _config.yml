@@ -1,11 +1,11 @@
 # Site settings
-title: Downtown Toronto's commercial development - Bay Park Centre
+title: Downtown Toronto's commercial development - CIBC Square
 email: info@bayparkcentre.com
 description: > # this means to ignore newlines until "baseurl:"
-  Bay Park Centre is a multi-phase commercial development in downtown Toronto,
+  CIBC Square is a multi-phase commercial development in downtown Toronto,
   comprising two office towers (81 Bay Street and 141 Bay Street) connected by an expansive,
-  landscaped park. Bay Park Centre will feature PATH access, LEED/WELL design, and best-in-class amenities.
-  The Bay Park Centre team is Ivanhoe Cambridge, Hines, Wilkinson Eyre Architects, Adamson Associates Architects,
+  landscaped park. CIBC Square will feature PATH access, LEED/WELL design, and best-in-class amenities.
+  The CIBC Square team is Ivanhoe Cambridge, Hines, Wilkinson Eyre Architects, Adamson Associates Architects,
   and Cushman & Wakefield.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.bayparkcentre.com" # the base hostname & protocol for your site

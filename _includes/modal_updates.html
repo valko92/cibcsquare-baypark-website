@@ -14,7 +14,6 @@
 
           {% for post in site.posts %}
             <div class="post">
-                <div class="post-bar"></div>
                 <h2  class="post-title white">{{post.title}}</h2>
                 <p class="post-date white" style="text-transform:uppercase;">{{ post.date | date: "%-m/%-d/%Y" }}</p>
                 {%if post.thumbnail %}
@@ -23,7 +22,7 @@
                 <div class="post-content small">{{post.content}}</div>
                 <p class="post-read-more hover-area honey link1">
                   <span class="honey">Read More</span>
-                  <img src="/assets/images/icons/arrow-right-honey-link.png" style="width:1.5em;" class="jumping-arrow">
+                  <img src="/assets/images/icons/arrow-right-grey-link.png" style="width:1.5em;" class="jumping-arrow">
                 </p>
             </div>
           {% endfor %}
@@ -35,7 +34,7 @@
 
 <style>
   .post-content p a, .post-content p a:visited {
-		color: #cda35c;
+		color: #babdc4;
   }
   .post-content p a:hover {
     opacity: 0.8;

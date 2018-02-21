@@ -84,7 +84,7 @@
 }
 
 .swiper-button-prev, .swiper-button-next { 
-  background-image: url('/assets/images/icons/testfits_spritesheet.png');
+  background-image: url('/assets/images/icons/testfits_spritesheet_grey.svg');
   background-repeat: no-repeat;
   background-size: 580px ;
   height: 69px ;
@@ -431,7 +431,7 @@
 	@media (min-width: $screen-md-min) {
 		border-left:1px solid $honey-color;
 		min-width: 100%;
-		background-image: url('/assets/images/icons/arrow-right-honey-button.png');
+		background-image: url('/assets/images/icons/arrow-right-grey-button.png');
 		background-repeat: no-repeat;
 		background-position: 98% center;
 		background-size: 1.2em;
@@ -460,7 +460,7 @@
     }
     &#attractions:hover {
       cursor: pointer;
-      background-image: url('/assets/images/icons/arrow-down-honey-button.png');
+      background-image: url('/assets/images/icons/arrow-down-grey-button.png');
       background-repeat: no-repeat;
       background-size: 1.2em;
     }
@@ -487,10 +487,10 @@
 		margin: 0 0-13px 0 -12px;
 	}
 	.banner-title {
-		border-bottom: 1px solid $honey-color;
+		border-bottom: none;
         padding-bottom: 14px;
 		@media (min-width: $screen-md-min) {
-			border-right: 1px solid $honey-color;	
+			border-right: none;	
 			border-bottom: none;
 			padding-bottom: 4.3em;
 		}
@@ -553,10 +553,10 @@
 }
 
 #biederman-slideshow.gray-banner-wrapper {
-	background-color: #eaebed;
+	background-color: #E6E7E8;
 	.banner-title {
 		h3 {
-            color: #69727f;
+            color: #6D6E71;
 		}
 	}
 	.banner-content {
@@ -731,7 +731,7 @@
             @media (min-width: $screen-md-min) {
                 padding-left: 0;
                 text-align: right;
-                border-right: 2px solid $honey-color;    
+                border-right: none;    
             }
 		}
 		.team-para-content {
@@ -1027,7 +1027,7 @@
         display: inline-block;
     }
     .full-screen-icon {
-        background-image: url(/assets/images/icons/testfits_spritesheet.png);
+        background-image: url(/assets/images/icons/testfits_spritesheet_grey.svg);
         background-repeat: no-repeat;
         background-size: 500px;
         height: 40px;
@@ -1036,7 +1036,7 @@
         padding: 0;
     }
     .compass-icon {
-        background-image: url(/assets/images/icons/testfits_spritesheet.png);
+        background-image: url(/assets/images/icons/testfits_spritesheet_grey.svg);
         background-repeat: no-repeat;
         background-size: 500px;
         height: 40px;
@@ -1061,7 +1061,7 @@
         .view-icon {
             float: right;
             margin: 1em 0;
-            background-image: url(/assets/images/icons/testfits_spritesheet.png);
+            background-image: url(/assets/images/icons/testfits_spritesheet_grey.svg);
             background-repeat: no-repeat;
             background-size: 500px;
             height: 30px;
@@ -1167,7 +1167,7 @@
                             }
                             .height-font {
                                 color: $black-color;
-                                font-family: 'freight-text-pro';
+                                font-family: 'karbon';
                                 font-size: 17px;
                                 letter-spacing: 0;
                                 text-transform: none;
@@ -1592,7 +1592,8 @@
     align-items: center;
     .news-article {
         width: auto;
-        flex: 0 0 100%;
+		flex: 0 0 100%;
+		padding-bottom: 60px;
         &:last-child {
             margin-right: auto;
         }
@@ -1638,7 +1639,7 @@
 }
 
 .post-bar {
-    background-color: #cda35c;
+    background-color: #babdc4;
     display: block;
     width: 50px;
     height: 3px;
@@ -1653,7 +1654,7 @@
 	}
 }
 .post-title, .post-date {
-    font-family: freight-text-pro-light, sans-serif;
+    font-family: 'karbon-light', sans-serif;
     font-weight: 300;
     font-size: 17px;
     letter-spacing: .15em;
@@ -1681,7 +1682,7 @@
 
 .post-content {
     color: #FFF;
-    font-family: freight-display-pro;
+    font-family: 'karbon';
     letter-spacing: 0;
     line-height: 1.2;
     font-weight: 400;
@@ -1706,7 +1707,7 @@
 			position: absolute;
 			bottom: -4px;
 			right: 0;
-			background: linear-gradient(to right, rgba(44, 44, 53, 0), rgba(44, 44, 53, 1) 50%);
+			background: linear-gradient(to right, rgba(109,110,113,0), rgba(109,110,113,1) 50%);
 			width: 24%;
 			height: 24px;
 			text-align: right;
