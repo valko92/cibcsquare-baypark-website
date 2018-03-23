@@ -880,7 +880,7 @@ $( document ).ready( function ()
     //VIMEO Modal
     $( '#vimeo' ).on( 'shown.bs.modal', function ()
     {
-        $( '#vimeo' ).find( 'iframe' ).attr( 'src', 'https://player.vimeo.com/video/258700020?autoplay=1&color=C7C8CA' );
+        $( '#vimeo' ).find( 'iframe' ).attr( 'src', 'https://player.vimeo.com/video/258700020?autoplay=1&color=C7C8CA&byline=0&portrait=0' );
     });
 
     $( '#vimeo' ).on( 'hidden.bs.modal', function ()
