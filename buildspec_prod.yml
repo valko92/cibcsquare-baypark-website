@@ -7,7 +7,7 @@ phases:
   build:
     commands:
       - JEKYLL_ENV=production jekyll build
-      - aws s3 sync _site s3://www.bayparkcentre.com --exclude "assets/js/libs/*" --exclude "assets/panos/*" --region=us-east-1 --cache-control "no-cache, max-age=0"
+      - aws s3 sync _site s3://www.cibcsquare.com --exclude "assets/js/libs/*" --exclude "assets/panos/*" --region=us-east-1 --cache-control "no-cache, max-age=0"
 artifacts:
   files: 
     - '_site/admin/*'
